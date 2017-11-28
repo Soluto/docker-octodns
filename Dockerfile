@@ -9,6 +9,6 @@ RUN pip install virtualenv \
 RUN pip install octodns==0.8.8
 RUN apk update \
     && apk add --no-cache gcc linux-headers musl-dev libffi-dev openssl-dev libxslt-dev \
-    && pip install azure-common msrestazure azure-mgmt-dns boto3 lxml
+    && pip install azure-common msrestazure azure-mgmt-dns boto3 lxml dyn
 
 CMD /bin/sh
